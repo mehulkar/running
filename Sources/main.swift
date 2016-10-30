@@ -14,7 +14,7 @@ func get_remaining_days() -> Int {
   let date = Date()
   let cal = Calendar.current
   let day_of_year = cal.ordinality(of: .day, in: .year, for: date)!
-  return total_days - day_of_year
+  return  total_days - day_of_year - (cli_args.count > 2 ? Int(cli_args[2])! : 0)
 }
 
 func get_daily_target() -> Float {
