@@ -10,4 +10,4 @@ Mile goal is hardcoded to 360.
 
 ## Use
 
-Run ``./build/debug/running <miles completed>`
+Run `./build/debug/running <miles completed>`
